@@ -1,0 +1,166 @@
+body {
+  font-family:'Josefin Sans', sans-serif;
+  font-style: light;
+  font-size: 24;
+
+}
+/* Header Styles */
+.header {
+  background-image: url(../images/halftones.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1100px;
+  max-height: 500px;
+  height: 200px;
+  background-position: bottom;
+}
+#pageTopic {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+/* Primary Color */
+.colorContainer {
+  display: inline-block;
+  margin: 30px;
+}
+.swatch {
+   height: 320px;
+   width: 140px;
+   border: 1px solid black;
+   border-top-left-radius: none;
+   border-top-right-radius: 18px;
+}
+.hexCode {
+   padding: 15px;
+   text-align: center;
+   border: 1px solid black;
+   border-top: none;
+   border-bottom-left-radius: 18px;
+   border-bottom-right-radius: none;
+}
+.darkGrey {
+  background-color: #535355;
+}
+.neoYellow {
+  background-color: #EEFF41;
+}
+.fushia {
+  background-color: #FB65FB;
+}
+.white {
+  background-color: #FFFFFF;
+}
+.robinBlue {
+  background-color: #ACECEB;
+}
+.tangerine{
+  background-color: #FC9B00;
+}
+.black {
+  background-color: #000000;
+}
+
+/* Typography CSS */
+.type_container {
+   display: inline-block;
+   margin: 40px;
+   padding:15px;
+}
+.large {
+    font-size: 66px;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.light {
+    font-weight: 100;
+}
+.regular {
+    font-weight: 500;
+}
+
+.typography h1 {
+font-family: acier-bat-gris, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 44px;
+}
+.typography h2 {
+    font-weight: 400;
+    font-size: 42px;
+}
+.typography h3 {
+    font-weight: 100;
+    font-size: 33px;
+}
+.typography h4 {
+  font-weight: 100;
+    font-size: 28px;
+}
+.typography h5 {
+  font-weight: 400;
+    font-size: 20px;
+}
+.typography h6 {
+  font-weight: 100;
+    font-size: 20px;
+}
+
+/* UI Elements */
+.button {
+   display: inline-block;
+   padding: 15px;
+   margin: 15px;
+   width: 400px;
+   height: 80px
+   font-size= 14px;
+   text-align:center;
+   color: #000000;
+   border-radius: 10px;
+}
+.primary {
+  background-color: #FFFFFF;
+  box-shadow: -5px 3px 6px 5px #E2DFDF
+}
+.hover {
+  background-color: #FFFFFF;
+  box-shadow: -5px 3px 6px 5px #FB65FB;
+}
+  
+.focus {
+  background-color: #FFFFFF;
+  box-shadow: -5px 3px 6px 5px #FB65FB;
+  border: 4px solid #ACECEB;
+  
+}
+.button1 {
+  font-family: acier-bat-gris, sans-serif;
+  display: inline;
+  padding: 30px;
+  margin: 30px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  border-radius: 50%;
+}
+.roundNormal {
+  background-color: #FFFFFF;
+  box-shadow: -5px 3px 6px 5px #E2DFDF
+}
+.roundHover {
+  background-color: #FFFFFF;
+  box-shadow: -5px 3px 6px 5px #FB65FB;
+}
+.roundActive {
+  background-color: #FFFFFF;
+  box-shadow: -5px 3px 6px 5px #FB65FB;
+  border: 4px solid #ACECEB;
+}
+.sectionHead {
+  border-bottom: 8px solid #DDDDDD;
+  padding: 15px;
+}
+  
