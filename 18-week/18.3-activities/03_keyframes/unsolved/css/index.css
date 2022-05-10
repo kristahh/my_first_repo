@@ -1,0 +1,133 @@
+.bounceMe {
+  /* Add the animation bounceArrow here */
+animation:bounceArrow .7s infinite
+}
+.spinMe {
+  /* Add the animation for spin on the line below  */
+animation:spin 2s infinite;
+}
+#progressbar {
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 61px;
+  padding: 3px;
+}
+#progressbar > .orangeBar {
+  background-color: red;
+  width: 40%;
+  height: 20px;
+  border-radius: 5px;
+  animation:loadBar 10s infinite;
+  animation-fill-mode: forwards;
+  /* add the animation name here for the progress bar */
+}
+.movingBox {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  /* Add the animation name here to mox the box */
+animation:movingBox 5s infinite;
+}
+
+.newBox {
+  width:200px;
+  height:200px;
+  background-color: black;
+  animation:spin 3s infinite;
+}
+
+
+@keyframes bounceArrow {
+  from {margin-top: 0px;
+
+  }
+  50% {margin-top: 10px;
+
+  }
+  to {margin-top: 0px;
+
+  }
+  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+
+  }
+  
+}
+
+@keyframes loadBar {
+  from {width: 20%;
+
+  }
+  to{ width: 50%;
+    background-color: blueviolet;
+  }
+  to {width: 100%;
+    background-color: blue;
+   }
+}
+
+@keyframes movingBox {
+  from { transform: translate3d(0px, 0px, 0px);
+
+
+  }
+  25% {transform: translate3d(300px, 0px, 0px);
+
+
+  }
+  50% {transform: translate3d(50px, 300px, 0px);
+
+
+  }
+  75% {transform: translate3d(200px, 100px, 0px);
+
+
+  }
+  100% {transform: translate3d(0px, 0px, 0px);
+
+
+  }
+}
+@keyframes .newBox {
+  from { transform:scale(.5);
+}
+50% {transform:scale(1.5);
+}}
+
+
+/* these values are used to display the grid and items*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "arrow preload"
+  "loadingBar loadingBar"
+  "boxMove newBox";
+}
+.gridChild {
+  margin: 15px;
+  padding: 15px;
+  height: 200px;
+}
+.arrow {
+  grid-area: arrow;
+  text-align: center;
+}
+.preload {
+  grid-area: preload;
+  text-align: center;
+}
+.loadingBar {
+  grid-area: loadingBar;
+}
+.boxMove {
+  grid-area: boxMove;
+}
+.newBox {
+  grid-area: newBox;
+}
